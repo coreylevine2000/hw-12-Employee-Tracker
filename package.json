@@ -2,17 +2,17 @@
   "name": "note-taker",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.4",
-    "inquirer": "^8.2.4",
+    "inquirer": "^7.3.3",
     "mysql": "^2.18.1",
-    "nodemon": "^2.0.16",
-    "uuid": "^3.4.0"
+    "mysql2": "^2.1.0"
   }
 }

@@ -8,5 +8,7 @@ Usage:
 For the proper usage of the app, one will need to have Inquirer, MySQL and Node installed onto their device to be able to access it via MySQL.
 
 Location:
+Video:
+Repo:
 
 Images:
