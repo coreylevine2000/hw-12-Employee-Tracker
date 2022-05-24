@@ -18,7 +18,7 @@ class employeeDB {
         return this.connection.promise().query("INSERT INTO employee SET ?", employee);
     }
 
-    // Update the given employee's role
+    // Update the employee's role
     updateEmployeeRole(employeeId, roleId) {
         return this.connection.promise().query(
             "UPDATE employee SET role_id = ? WHERE id = ?",
@@ -26,7 +26,7 @@ class employeeDB {
         );
     }
 
-    // Delete the given employee's role test
+    // Delete the employee's role
     deleteEmployeeRole(employeeId, roleId) {
         return this.connection.promise().query(
             "DELETE employee SET role_id = ? WHERE id = ?",

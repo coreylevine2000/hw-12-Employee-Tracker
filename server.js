@@ -1,19 +1,17 @@
 const { prompt } = require("inquirer");
+const mysql = require("mysql2");
 const db = require("./db");
 require("console.table");
 
-const mysql = require("mysql2");
-
 const connection = mysql.createConnection({
-  host: "localhost",
-  user: "root",  // MySQL Username
-  password: "punisher0.The",   // MySQL Password
-  database: "employee_db"
-});
-
-connection.connect(function (err) {
-  if (err) throw err;
-});
+    user: "root",  // MySQL Username
+    password: "punisher0.The",   // MySQL Password
+    database: "employee_db"
+  });
+  
+  connection.connect(function (err) {
+    if (err) throw err;
+  });  
 
 
 init();
@@ -26,7 +24,7 @@ function init() {
 function runPrompts() {
     prompt([
         {
-            // Initial Menu
+            // Menu
             type: "list",
             name: "choice",
             message: "Please select an option.",
@@ -69,7 +67,7 @@ function runPrompts() {
 
     ]).then(res => {
         let choice = res.choice;
-        // Call the functions from what the user selects
+        // Call the functions from the user's selection
         switch (choice) {
             case "VIEW_DEPARTMENTS":
                 viewAllDepartments();
@@ -294,6 +292,7 @@ function updateEmployeeRole() {
                 });
         })
 }
+
 
 // Quit the app
 function quit() {
