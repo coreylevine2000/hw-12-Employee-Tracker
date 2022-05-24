@@ -9,7 +9,7 @@ For the proper usage of the app, one will need to have Inquirer, MySQL and Node 
 
 Location:
 
-Video:
+Video: https://vimeo.com/713462969/f9c599123c 
 Repo: https://github.com/coreylevine2000/hw-12-Employee-Tracker
 
 Images:

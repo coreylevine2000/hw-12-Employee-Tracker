@@ -14,13 +14,13 @@ VALUES
 INSERT INTO role
     (title, salary, department_id)
 VALUES
-    ('Company Security Manager', 1000000, 1),
-    ('Company Security VP', 90000, 2),
-    ('Company Security Officer', 80000, 2),
-    ('Contract Security Lead', 60000, 3),
+    ('Company Sec Manager', 1000000, 1),
+    ('Company Sec VP', 90000, 2),
+    ('Company Sec Officer', 80000, 2),
+    ('Contract Sec Lead', 60000, 3),
     ('PSO Supervisor', 50000, 4),
-    ('Physical Security Officer', 40000, 5),
-    ('Temp Security Officer', 35000, 6),
+    ('Physical Sec Officer', 40000, 5),
+    ('Temp Sec Officer', 35000, 6),
     ('Terminated', 0, 7);
 
 INSERT INTO employee
