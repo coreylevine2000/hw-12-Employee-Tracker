@@ -44,6 +44,10 @@ function runPrompts() {
                     name: "Update Employee Role",
                     value: "UPDATE_EMPLOYEE_ROLE"
                 },
+                // {
+                //     name: "Remove an Employee",
+                //     value: "REMOVE_EMPLOYEE"
+                // },
                 {
                     name: "Quit",
                     value: "QUIT"
@@ -75,6 +79,9 @@ function runPrompts() {
                 break;
             case "UPDATE_EMPLOYEE_ROLE":
                 updateEmployeeRole();
+                break;
+            // case "REMOVE_EMPLOYEE":
+            //     removeEmployee();
                 break;
             default:
                 quit();
@@ -279,6 +286,31 @@ function updateEmployeeRole() {
         })
 }
 
+//Remove an employee
+// function removeEmployee() {
+//     db.allEmployees()
+//         .then(([rows]) => {
+//             let employee = rows;
+//             const employeeChoices = employee.map(({ first_name, last_name }) => ({
+//                 name: last_name + " " + first_name,
+                
+//             }));
+
+//             prompt([
+//                 {
+//                     type: "list",
+//                     name: "employee_id",
+//                     message: "Would you like to remove",
+//                     choices: employeeChoices
+//                 }
+//             ])
+//                 .then(role => {
+//                     db.removeEmployee(realChoice)
+//                         .then(() => console.log(`Removed ${role} to the database`))
+//                         .then(() => runPrompts())
+//                 })
+//         })
+// }
 
 init();
 

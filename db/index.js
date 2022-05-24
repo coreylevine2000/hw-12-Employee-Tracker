@@ -26,13 +26,13 @@ class employeeDB {
         );
     }
 
-    //Delete the employee's role
-    deleteEmployeeRole(employeeId, roleId) {
-        return this.connection.promise().query(
-            "DELETE employee SET role_id = ? WHERE id = ?",
-            [roleId, employeeId]
-        );
-    }
+    // //Delete the employee's role
+    // deleteEmployeeRole(employeeId, roleId) {
+    //     return this.connection.promise().query(
+    //         "DELETE employee SET role_id = ? WHERE id = ?",
+    //         [roleId, employeeId]
+    //     );
+    // }
 
     //Show all managers
     allManagers(employeeId) {
@@ -65,6 +65,11 @@ class employeeDB {
     addDepartment(department) {
         return this.connection.promise().query("INSERT INTO department SET ?", department);
     }
+
+    //Remove an employee
+    // removeEmployee(employee) {
+    //     return this.connection.promise().query("DELETE employee SET ?", employee);
+    // }
 }
 
 module.exports = new employeeDB(connection);
