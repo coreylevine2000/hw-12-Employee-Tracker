@@ -13,3 +13,6 @@ Video:
 Repo: https://github.com/coreylevine2000/hw-12-Employee-Tracker
 
 Images:
+![plot](./Assests/Intro.PNG)
+![plot](./Assests/Employees.PNG)
+![plot](./Assests/Add%20role%20and%20employee.PNG)
