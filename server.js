@@ -2,9 +2,6 @@ const { prompt } = require("inquirer");
 const db = require("./db");
 require("console.table");
 
-
-init();
-
 // Start APP with NPM START
 function init() {
     runPrompts();
@@ -214,7 +211,7 @@ function createEmployee() {
                                     prompt({
                                         type: "list",
                                         name: "managerId",
-                                        message: "Who's the employee's manager?",
+                                        message: "Who will be the employee's manager?",
                                         choices: managerChoices
                                     })
                                         .then(res => {
@@ -282,6 +279,8 @@ function updateEmployeeRole() {
         })
 }
 
+
+init();
 
 // Quit the app
 function quit() {
